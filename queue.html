@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BANKING QUEUE TRACKER & SERVICE REQUEST</title>
+  <link rel="stylesheet" href="queue.css">
+</head>
+<body>
+
+  <div class="header-box">
+    <h1>BANKING QUEUE TRACKER & SERVICE REQUEST</h1>
+  </div>
+
+  <div class="container">
+
+    <!-- Customer Login Section -->
+    <div class="login-section">
+      <h2>Customer Queue Access</h2>
+
+      <label for="name">Customer Name:</label>
+      <input type="text" id="name" placeholder="Enter Your Name">
+
+      <label for="branch">Select Branch:</label>
+      <select id="branch">
+        <option value="SBI">💙 SBI</option>
+        <option value="Canara">💛 Canara</option>
+        <option value="Union">❤️ Union Bank</option>
+      </select>
+
+      <label for="service">Select Service:</label>
+      <select id="service">
+        <option value="Cash Withdrawal">Cash Withdrawal</option>
+        <option value="Deposit">Deposit</option>
+        <option value="Loan Enquiry">Loan Enquiry</option>
+        <option value="Account Opening">Account Opening</option>
+      </select>
+
+      <button onclick="joinQueue()">Join Queue</button>
+    </div>
+
+    <!-- Queue Display Section -->
+    <div class="queue-display">
+      <h3>Current Queue</h3>
+
+      <div class="bank-columns">
+        <div class="bank-column" id="SBI-queue">
+          <h4>💙 SBI</h4>
+          <div class="service-group">
+            <strong>Cash Withdrawal:</strong>
+            <p id="SBI-Cash Withdrawal"></p>
+
+            <strong>Deposit:</strong>
+            <p id="SBI-Deposit"></p>
+
+            <strong>Loan Enquiry:</strong>
+            <p id="SBI-Loan Enquiry"></p>
+
+            <strong>Account Opening:</strong>
+            <p id="SBI-Account Opening"></p>
+          </div>
+        </div>
+
+        <div class="bank-column" id="Canara-queue">
+          <h4>💛 Canara</h4>
+          <div class="service-group">
+            <strong>Cash Withdrawal:</strong>
+            <p id="Canara-Cash Withdrawal"></p>
+
+            <strong>Deposit:</strong>
+            <p id="Canara-Deposit"></p>
+
+            <strong>Loan Enquiry:</strong>
+            <p id="Canara-Loan Enquiry"></p>
+
+            <strong>Account Opening:</strong>
+            <p id="Canara-Account Opening"></p>
+          </div>
+        </div>
+
+        <div class="bank-column" id="Union-queue">
+          <h4>❤️ Union</h4>
+          <div class="service-group">
+            <strong>Cash Withdrawal:</strong>
+            <p id="Union-Cash Withdrawal"></p>
+
+            <strong>Deposit:</strong>
+            <p id="Union-Deposit"></p>
+
+            <strong>Loan Enquiry:</strong>
+            <p id="Union-Loan Enquiry"></p>
+
+            <strong>Account Opening:</strong>
+            <p id="Union-Account Opening"></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 Banking Queue Tracker
+  </div>
+
+  <script src="queue.js"></script>
+
+</body>
+</html>
